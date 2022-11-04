@@ -1,4 +1,6 @@
-# Flag-Bot
+## Flag-Bot
+
+```
 This script provides a discord user with a flag guessing game.
 ---------------------------------------------------------------------------------------------------------
 Commands:
@@ -9,3 +11,4 @@ Commands:
 (This is represented by its own score on the leaderboard)
 ---------------------------------------------------------------------------------------------------------
 !leaderboard - provides a visual leaderboard to see tops scores achieved in the game.
+```
