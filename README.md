@@ -1,48 +1,88 @@
-# Flag-Bot
+# Flag Guessing Game
 
-This script provides a discord bot that can be added to any server providing user's with a flag guessing game.
+![Project Image](project-image-url)
 
---------------------------------------------------------------------------------------------------------------
-How to operate the flag guessing game bot:
+> This repository contains a flag guessing game for a user to play in Discord.
 
-  <ins>Commands:</ins>
-  
-  **!flag** - opens a unique channel for each discord user and allows them to play the flag guessing game
-  
-  **!flag-team** - allows a group of people to pay the flag guessing game in the channel it is called providing "team" play. 
-               (This is represented by its own score on the leaderboard)
-  
-  **!leaderboard** - provides a visual leaderboard to see tops scores achieved in the game.
-  
-  <ins>Required Inputs:</ins>
-  
-  Add your discord bot token to the bottom of the script, labelled 'discord-token-here'
-  
---------------------------------------------------------------------------------------------------------------
+---
 
-## Example:
-### Correct Guess By The User
-(Information covered for anonymity)
+### Table of Contents
 
-![correct_guess_crop](https://user-images.githubusercontent.com/71076769/209839304-04358f1a-0cc7-4c3c-98bb-fe86030cff48.png)
+- [Description](#description)
+- [How To Use](#how-to-use)
+- [Demonstration](#demonstration)
+- [Author Info](#author-info)
 
---------------------------------------------------------------------------------------------------------------
+---
 
-### Incorrect Guess By The User
+## Description
 
-![incorrect_guess](https://user-images.githubusercontent.com/71076769/209839841-d1a9cde5-c86c-41b5-a230-5bd53b1b6792.png)
+This repository provides the user a flag guessing game which is integrated into Discord. It uses the **Flagpedia API** to collect the images of the flags and send them into Discord for the user to guess. 
 
-As you can see above the user has not correctly guessed the flag.
+The game provides solo and team play, tracking and recording scores within the game and stroing them  in a leaderboard which can be viewed using `!leaderboard` ([Leaderboard](#leaderboard)).
 
-The output results in the user's **score**, **correct flag name** and a **Wikipedia link**.
+If the user inputs inputs the correct name for the flag the game will continue ([Correct answer screen](#correct-answer)) however if the user's input is incorrect the game will end and they will be prompted to play again through  a simple **yes** or **no** button system ([Incorrect answer screen](#incorrect-answer)).
 
-The script also provides the user buttons to replay the game.
+### Technologies / Packages
 
---------------------------------------------------------------------------------------------------------------
-### Leaderboard
+- Python
+    - **requests** package
+    
+        Used to call the API and collect the image of the flag.
+    - **nextcord** package
 
-![leaderbaord_page](https://user-images.githubusercontent.com/71076769/209840529-48eb6fcf-a9ba-4e1d-b072-0478f387b102.png)
+        Used to integrate the flag guessing game into Discord.  
+- API
+    - **Flagpedia** API [https://flagpedia.net/]
 
-As we can see above, the bot can utput the leaderboard for the users within the server.
+        Used to collect the images of the flags.
 
-The username "Team" refers to the team playing mode of the game.
+[Back To The Top](#flag-guessing-game)
+
+---
+
+## How To Use
+
+### Commands
+
+`!flag` - This opens a unique channel for the user to play the game.
+
+`!flag-team` - This allows a group of people to play the game. It begins the game in the channel this command was called in.
+(This is also represented as **team** on the scoreboard)
+
+`!leaderboard` - This provides a visual leaderbaord with the top scores achieved in the game for that server.
+
+[Back To The Top](#flag-guessing-game)
+
+---
+## Demonstration
+
+### **Correct Answer**
+
+Below you can see a screenshot of the user correctly guessing the name of the flag.
+
+![correct_answers_edited](https://user-images.githubusercontent.com/71076769/211026184-58e2a573-dcd7-469d-8b24-8743ced2ba32.png)
+
+### **Incorrect Answer**
+
+Below you can see a screenshot of the user incorrectly guessing the name of the flag. The game will end and their **score** will be displayed with the **correct answer** and a link to the Wikipedia page.
+
+The  user is also prompted whether they would like to play again.
+
+![incorrect_answeres_edited](https://user-images.githubusercontent.com/71076769/211026212-bedb0bb9-d1ad-4a89-8125-7a1971e33025.png)
+
+### **Leaderboard**
+
+Below you can see a screenshot of the user calling the leaderboard to view the top scores in the game.
+
+![leaderboard_edited](https://user-images.githubusercontent.com/71076769/211026243-8cd43a0d-4028-45df-acef-e2176c63bce7.png)
+
+[Back To The Top](#flag-guessing-game)
+
+---
+
+## Author Info
+
+LinkedIn - [George Lopez](https://www.linkedin.com/in/george-benjamin-lopez/)
+
+[Back To The Top](#flag-guessing-game)
