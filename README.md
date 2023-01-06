@@ -1,6 +1,6 @@
 # Flag Guessing Game
 
-![Project Image](project-image-url)
+![title_page](https://user-images.githubusercontent.com/71076769/211027034-c69062b2-5ae5-4807-975a-abd273bb57b6.png)
 
 > This repository contains a flag guessing game for a user to play in Discord.
 
