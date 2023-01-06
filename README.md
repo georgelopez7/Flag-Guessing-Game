@@ -19,7 +19,7 @@
 
 This repository provides the user a flag guessing game which is integrated into Discord. It uses the **Flagpedia API** to collect the images of the flags and send them into Discord for the user to guess. 
 
-The game provides solo and team play, tracking and recording scores within the game and stroing them  in a leaderboard which can be viewed using `!leaderboard` ([Leaderboard](#leaderboard)).
+The game provides **solo** and **team play**, tracking and recording scores within the game and stroring them  in a leaderboard which can be viewed using `!leaderboard` ([Leaderboard](#leaderboard)).
 
 If the user inputs inputs the correct name for the flag the game will continue ([Correct answer screen](#correct-answer)) however if the user's input is incorrect the game will end and they will be prompted to play again through  a simple **yes** or **no** button system ([Incorrect answer screen](#incorrect-answer)).
 
